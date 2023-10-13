@@ -6,6 +6,12 @@
 
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/button.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/slider.css" />
     <title>Wisbox</title>
     <link rel="icon" type="image/x-icon" href="/images/wisbox_logo.png" />
     <link
@@ -30,14 +36,7 @@
     </header>
 
     <section class="hero" data-bg="#000">
-      <!-- src="https://th.bing.com/th/id/OIG.YtzRvk2cUFMV7Zk.WlOn?pid=ImgGn" -->
       <div class="bg-img">
-        <!-- <img
-          src="https://www.kujaja.com/photos/full/4c4cf8eb2b05b0d12f2b1bafd9d7c190/72e96532f5e133702d42e842a0bbae50.jpg"
-          alt=""
-        /> -->
-        <!-- <img src="images/desmond-lingard-v0w0be3mUDQ-unsplash.jpg" alt="" /> -->
-        <!-- <img src="images/jerry-mathew-jSMoSz5gPYE-unsplash.jpg" alt="" /> -->
         <img src="images/ai-generated-market.jpg" alt="" />
       </div>
       <div class="hero-content">
@@ -45,20 +44,13 @@
           Welcome to Wisbox <br />
           <p>Transforming Physical Outlets with Digital Power</p>
         </h1>
-        <!-- <div class="half-moon"></div> -->
-        <!-- <div class="parallax__layer slider-thumb"></div> -->
         <ul class="hero-items">
           <li>Live Customer Interaction</li>
           <li>Promote your services</li>
           <li>Manage Stocks</li>
         </ul>
-        <!-- <a draggable="true" href="#link-to-playstore" class="cta-button"
-          >Download The APP</a
-        > -->
-        <!-- <a href="#">
-          <span>Download The APP</span>
-        </a> -->
         <button
+          class="dwn_btn"
           id="download-button"
           onclick="() => {window.location('play.google.com/')}"
         >
@@ -68,10 +60,67 @@
     </section>
 
     <section class="features" data-bg="green">
-      <div></div>
+      <div>
+        <div class="slide-container swiper">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img src="images/profile1.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                  <p class="description">
+                    The lorem text the section that contains header with having
+                    open functionality. Lorem dolor sit amet consectetur
+                    adipisicing elit.
+                  </p>
+
+                  <!-- <button class="button">View More</button> -->
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img src="images/profile2.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                  <p class="description">
+                    The lorem text the section that contains header with having
+                    open functionality. Lorem dolor sit amet consectetur
+                    adipisicing elit.
+                  </p>
+
+                  <!-- <button class="button">View More</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div> -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="scripts/swiper-bundle.min.js"></script>
+
+        <!-- JavaScript -->
+        <script src="scripts/slider.js"></script>
+      </div>
     </section>
     <footer>
-      <p>&copy; 2023 DotPe-like Website. All rights reserved.</p>
+      <p>&copy; 2023 Wisbox. All rights reserved.</p>
     </footer>
 
     <script src="scripts/main.js"></script>
