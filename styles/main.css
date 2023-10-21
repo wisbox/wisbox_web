@@ -110,6 +110,7 @@ li {
   background: #fffefebf;
   border-radius: 50px;
   padding: 20px;
+  margin: 10px;
   /* filter: blur(10px); */
 }
 .hero .hero-content h1 p {
@@ -201,7 +202,7 @@ li {
 }
 
 /* If the screen size is 400px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 550px) {
   .hero .hero-content h1 {
     font-size: 3rem;
     font-weight: 600;
