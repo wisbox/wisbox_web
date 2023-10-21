@@ -13,6 +13,12 @@
   border: 4px solid #fff;
 }
 
+.dwn_btn img {
+  width: 100%;
+  z-index: -1;
+  transition: 0.3s ease transform;
+}
+
 .dwn_btn:before,
 .dwn_btn:after {
   content: "";
@@ -23,10 +29,10 @@
   left: 0;
 }
 
+/* background-image: url("https://himalayasingh.github.io/.dwn_btn-hover-effect-1/img/bg.jpg"); */
+/* background-image: url("https://images.unsplash.com/reserve/bOvf94dPRxWu0u3QsPjF_tree.jpg?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8NHx8bmF0dXJhbHxlbnwwfHx8fDE2OTY1NzQxMjl8MA&ixlib=rb-4.0.3&q=80&w=1080"); */
 .dwn_btn:before {
   transform: scale(1);
-  /* background-image: url("https://himalayasingh.github.io/.dwn_btn-hover-effect-1/img/bg.jpg"); */
-  /* background-image: url("https://images.unsplash.com/reserve/bOvf94dPRxWu0u3QsPjF_tree.jpg?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8NHx8bmF0dXJhbHxlbnwwfHx8fDE2OTY1NzQxMjl8MA&ixlib=rb-4.0.3&q=80&w=1080"); */
   background-image: url("/images/new/Commercial-Street-Bangalore-640.jpg");
   background-size: cover;
   transition: 0.3s ease transform;
